@@ -9,7 +9,7 @@ def homepage(request):
 def profilepage(request):
     if request.user.is_authenticated:
         if request.user.typeof=='teacher':
-            return render(request,'project/profilepage.html')
+            return render(request,'project/profilePage.html')
         else:
             return render(request,'project/profilePage2.html')
 
